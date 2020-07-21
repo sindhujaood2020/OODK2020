@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+	id="WebApp_ID" version="4.0">
+	<display-name>SmartDoc</display-name>
+	
+	<servlet>
+		<servlet-name>LoginController</servlet-name>
+		<servlet-class>com.sd.servlet.LoginChecker</servlet-class>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>LoginController</servlet-name>
+		<url-pattern>/userLogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>UserEnrollment</servlet-name>
+		<servlet-class>com.sd.servlet.RegistrationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>UserEnrollment</servlet-name>
+		<url-pattern>/userEnrollment</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>SlotEnrollment</servlet-name>
+		<servlet-class>com.sd.servlet.SlotRegistrationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SlotEnrollment</servlet-name>
+		<url-pattern>/addSlot</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>GetSlotAvailability</servlet-name>
+		<servlet-class>com.sd.servlet.SlotRegistrationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetSlotAvailability</servlet-name>
+		<url-pattern>/getAvailability</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ViewSlots</servlet-name>
+		<servlet-class>com.sd.servlet.SlotsRetrievalController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ViewSlots</servlet-name>
+		<url-pattern>/getSlots</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>PatientEnrollment</servlet-name>
+		<servlet-class>com.sd.servlet.PatientRegistrationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>PatientEnrollment</servlet-name>
+		<url-pattern>/addPatient</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>NavigationController</servlet-name>
+		<servlet-class>com.sd.servlet.NavigationController</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>NavigationController</servlet-name>
+		<url-pattern>/navcon</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>GetSpecializations</servlet-name>
+		<servlet-class>com.sd.servlet.GetSpecializations</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetSpecializations</servlet-name>
+		<url-pattern>/getSpecializations</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>GetDoctors</servlet-name>
+		<servlet-class>com.sd.servlet.GetDoctors</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>GetDoctors</servlet-name>
+		<url-pattern>/getDoctors</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>FindPatients</servlet-name>
+		<servlet-class>com.sd.servlet.FindPatients</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>FindPatients</servlet-name>
+		<url-pattern>/findPatients</url-pattern>
+	</servlet-mapping>
+	
+	
+	
+</web-app>
