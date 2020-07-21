@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+    <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+     "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+      
+     <hibernate-mapping>  
+      <class name="com.sd.hib.Slot" table="slot">  
+        <id name="slot_id">  
+         <generator class="assigned"></generator>  
+        </id>  
+                
+        <property name="patient_id"></property>  
+        <property name="doctor_id"></property>  
+        <property name="first_name"></property>  
+        <property name="last_name"></property>  
+        <property name="slot_date"></property>
+        <property name="slot_time"></property>    
+        <property name="created_at"></property> 
+        <property name="updated_date"></property> 
+        <property name="slot_status"></property>  
+        <property name="priority"></property>  
+        <property name="comments"></property>  
+                
+      </class>  
+                
+     </hibernate-mapping>  

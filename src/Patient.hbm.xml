@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+    <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+     "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+      
+     <hibernate-mapping>  
+      <class name="com.sd.hib.Patient" table="patient">  
+        <id name="patient_id">  
+         <generator class="assigned"></generator>  
+        </id>  
+                
+        <property name="first_name"></property>  
+        <property name="last_name"></property>  
+        <property name="gender"></property>  
+        <property name="date_of_birth"></property>  
+        <property name="age"></property>
+        <property name="contact_number"></property>    
+        <property name="created_at"></property>  
+        <property name="address"></property> 
+                
+      </class>  
+                
+     </hibernate-mapping>  

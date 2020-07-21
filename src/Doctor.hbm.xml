@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8'?>  
+    <!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 5.3//EN"  
+     "http://hibernate.sourceforge.net/hibernate-mapping-5.3.dtd">  
+      
+     <hibernate-mapping>  
+      <class name="com.sd.hib.Doctor" table="doctor">  
+        <id name="doctor_id">  
+         <generator class="assigned"></generator>  
+        </id>  
+                
+        <property name="first_name"></property>  
+        <property name="last_name"></property>  
+        <property name="gender"></property>  
+        <property name="specialization"></property>  
+            
+      </class>  
+                
+     </hibernate-mapping>  
